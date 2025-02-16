@@ -45,15 +45,19 @@ export default function WhoAreWe(){
         <>
         <div className={styles.wweContainer}>
             <motion.div style={{
-                backgroundColor: "white",
-                color: "black",
                 display: "flex",
                 alignItems: "center",
                 gap: "30px",
                 marginBottom: "0px",
                 height: "200px",
-                paddingTop: "200px"
-            }} ref={containerRef} animate={mainControl}>
+                paddingTop: "200px",
+                zIndex: "999"
+            }} ref={containerRef} animate={mainControl} initial="hidden" variants={
+                {
+                    hidden: {opacity: 0, x: -75},
+                    visible: { opacity: 1, x: 0}
+                }
+            } transition={{delay: .3, duration: 1}}>
                 {contentLeft[0]}
                 <div style={{
                      paddingTop: "10%",
@@ -62,15 +66,17 @@ export default function WhoAreWe(){
                     <Image src={image1} alt='wwa' width={500}/>
                 </div>
             </motion.div>
-            <div style={{
-                backgroundColor: "white",
-                color: "black",
+            <motion.div style={{
                 display: "flex",
                 alignItems: "center",
                 gap: "30px",
                 marginBottom: "0px",
                 height: "700px",
-            }}>
+            }} ref={containerRef} animate={mainControl} initial="hidden" variants={
+                {hidden: {opacity: 0 , x: 75},
+                 visible: {opacity: 1, x:0}
+                }
+            } transition={{delay: .3, duration: 1}}>
                 <div style={{
                      paddingTop: "20%",
                      marginLeft: "23%",
@@ -79,7 +85,7 @@ export default function WhoAreWe(){
                     <Image src={image2} alt='wwa' width={500}/>
                 </div>
                 {contentRight[1]}
-            </div>
+            </motion.div>
         </div>
             
         </>
