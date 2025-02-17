@@ -11,11 +11,11 @@ export default function NewsCards(props){
     const topic = items.map((topic, index) => 
         <>
         <div className={styles.imageCard}>
-            <Image alt={index} style={{width: "500px",
+            <Image alt={index} style={{width: "400px",
                                        height: "auto",
                                        position: "absolute",
                                        left: "auto"
-            }} src={topic.image} width={500} height={0}/>
+            }} src={topic.image}/>
         </div>
         <div className={styles.textCard}>
             <h1>{topic.topic}</h1>

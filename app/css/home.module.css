@@ -5,19 +5,23 @@
     position: absolute;
     z-index: -1;
     background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
 }
 
 .textContainer {
     font-family: "Bai Jamjuree", serif;
     position: absolute;
-    font-size: 300%;
-    width: 50%;
+    font-size: 200%;
+    width: 100%;
+    height: 100%;
     margin-left: 50%;
     top: 300px;
 }
 
 .textContainer h1{
     margin-bottom: 0px;
+    font-size: 200%;
 }
 
 .studio {

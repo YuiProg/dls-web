@@ -18,8 +18,8 @@ export default function Navigation() {
                 <nav className={styles.navSection}>
                     <ul className={styles.list}>
                         <li><Link to="home" smooth={true} duration={500}>HOME</Link></li>
-                        <li><Link to="news" smooth={true} duration={500} offset={-100}>NEWS</Link></li>
-                        <li><Link to="whoarewe" smooth={true} duration={500} offset={-100}>WHO WE ARE</Link></li>
+                        <li><Link to="news" smooth={true} duration={500} offset={-80}>NEWS</Link></li>
+                        <li><Link to="whoarewe" smooth={true} duration={500} offset={-80}>WHO WE ARE</Link></li>
                         <nav className={styles.navSection}>
                     <ul className={styles.list}>
                         <li className={styles.dropdownContainer}>
@@ -55,12 +55,12 @@ export default function Navigation() {
             </header>
         </div>
         <Element name="home">
-            <section style={{height: '100vh'}}>
+            <section style={{height: '110vh'}}>
                 <Home/>
             </section>
         </Element>
         <Element name="news">
-            <section style={{height: '200vh'}}>
+            <section style={{height: '250vh'}}>
                 <News/>
             </section>
         </Element>
