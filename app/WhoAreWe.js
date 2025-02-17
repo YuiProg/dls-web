@@ -31,9 +31,10 @@ export default function WhoAreWe(){
 
     const contentRight = descriptions.map((items, index) => 
         <div style={{
-            fontSize: "20px",
+            fontSize: "18px",
             width: "25%",
             marginLeft: "0%",
+            marginRight: "13%",
             marginBottom: "0%",
             paddingTop: "10%"
             }} key={index}>
@@ -82,7 +83,7 @@ export default function WhoAreWe(){
                      marginLeft: "23%",
                      marginBottom: "80px"
                      }}>
-                    <Image src={image2} alt='wwa' width={500}/>
+                    <Image src={image2} alt='wwa' width={400}/>
                 </div>
                 {contentRight[1]}
             </motion.div>
