@@ -32,4 +32,5 @@
 }
 .imageContainer {
     width: 50%;
+    display: flex;
 }

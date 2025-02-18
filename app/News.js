@@ -54,15 +54,10 @@ export default function News () {
     return (
         <>
             <div className={styles.newsContainer}>
-                <motion.p ref={containerRef} animate={mainControl} initial="hidden" variants={
+                <motion.p className={styles.happeningText} ref={containerRef} animate={mainControl} initial="hidden" variants={
                     {hidden: {opacity: 0, y: 75},
                      visible: {opacity: 1, y: 0}}
-                } transition={{delay: 0.3, duration: 0.5}} style={{textAlign: "center",
-                            marginBottom: "5%",
-                            fontSize: "50px",
-                            marginTop: "0px",
-                            paddingTop: "5%"  
-                }}>WHATS <span style={{fontWeight: "bold"}}>HAPPENING?</span></motion.p>
+                } transition={{delay: 0.3, duration: 0.5}}>WHATS <span style={{fontWeight: "bold"}}>HAPPENING?</span></motion.p>
                 <div className={styles.cardHolder}>
                     {<NewsCards topic={cardContent.map(content => content)}/>}
                 </div>

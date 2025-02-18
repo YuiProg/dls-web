@@ -61,7 +61,7 @@ export default function WhoAreWe(){
             } transition={{delay: .3, duration: 1}}>
                 {contentLeft[0]}
                 <div style={{
-                     paddingTop: "10%",
+                     paddingTop: "28%",
                      paddingBottom: "30px"
                      }}>
                     <Image src={image1} alt='wwa' width={500}/>
